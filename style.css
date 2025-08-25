@@ -44,3 +44,63 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85)
+}
+
+/* Transition */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+/* flexible display that will adjust to screen size */
+nav, .nav-links {
+    display: flex;
+}
+
+/*space-around means equal space around each nav
+  17vh means the nav will take 17% of viewport height*/
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+/* rem is a measurement equal to font size, used for dynamic sizing
+   list-style: none removes the bullet points from list*/
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/* for links*/
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+/* stops from cursor changing when hovering logo */
+.logo:hover {
+    cursor: default;
+}
